@@ -3,16 +3,16 @@ import { useTranslation } from 'react-i18next';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 
-import handleToggle from '../../utils/showMenu';
-
 import { useLanguage } from '../../hooks/useLanguage';
+
+import Header from '../Header';
 
 import { ReactComponent as BrazilIcon } from '~/assets/svg/brazil.svg';
 import { ReactComponent as FranceIcon } from '~/assets/svg/france.svg';
 import { ReactComponent as SpainIcon } from '~/assets/svg/spain.svg';
 import { ReactComponent as USAIcon } from '~/assets/svg/usa.svg';
 
-import { Container, HeaderWrapper, Header, DropboxLogo, Content, BottomFooter } from './styles';
+import { Container, Content, BottomFooter } from './styles';
 
 interface LinksHref {
   [key: string]: string;
@@ -53,19 +53,7 @@ const Footer: React.FC = () => {
 
   return (
     <Container>
-      <HeaderWrapper>
-        <Header>
-          <h1>
-            <DropboxLogo />
-            <span>Dropbox</span>
-          </h1>
-
-          <button type="button" onClick={handleToggle}>
-            Acessar
-          </button>
-        </Header>
-      </HeaderWrapper>
-
+      <Header />
       <Content>
         <ul className="footer__group-list">
           {titles.map((title, index) => {

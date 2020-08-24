@@ -1,4 +1,17 @@
 {
+  "subheader-title-1": "Focus on the work that matters",
+  "subheader-title-2": "Dropbox is the world’s first smart workspace. We bring all your team’s content together while letting you use the tools you love. And we help cut through the clutter, surfacing what matters most.",
+  "subheader-button-1": "Sign up for free",
+
+  "beigemidsection-title-1": "Say goodbye to busywork",
+  "beigemidsection-title-2": "Most “productivity” tools get in your way and constantly disrupt your flow. There’s a more enlightened way to work. Dropbox helps people be organized, stay focused, and get in sync with their teams.",
+
+  "subfooter-title-1": "Find the right Dropbox plan for you",
+  "subfooter-title-2": "For freelancers and solo workers",
+  "subfooter-title-3": "For businesses and teams of any size",
+  "subfooter-button-1": "Get Dropbox",
+  "subfooter-button-2": "Get Dropbox Business",
+
   "footer-col-1-title": "Dropbox",
   "footer-col-1-link-1": "Desktop app",
   "footer-col-1-link-2": "Mobile apps",
@@ -29,11 +42,5 @@
   "footer-col-5-title": "Community",
   "footer-col-5-link-1": "Developers",
   "footer-col-5-link-2": "Referrals",
-  "footer-col-5-link-3": "Forum",
-
-  "subfooter-title-1": "Find the right Dropbox plan for you",
-  "subfooter-title-2": "For freelancers and solo workers",
-  "subfooter-title-3": "For businesses and teams of any size",
-  "subfooter-button-1": "Get Dropbox",
-  "subfooter-button-2": "Get Dropbox Business"
+  "footer-col-5-link-3": "Forum"
 }

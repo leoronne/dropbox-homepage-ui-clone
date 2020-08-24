@@ -1,4 +1,17 @@
 {
+  "subheader-title-1": "Concentrez-vous sur ce qui compte vraiment",
+  "subheader-title-2": "Dropbox est le tout premier espace de travail intelligent du marché. Nous rassemblons tous les contenus de votre équipe tout en vous laissant utiliser les outils que vous aimez. Et nous vous aidons à y voir plus clair en mettant en avant ce qui compte vraiment.",
+  "subheader-button-1": "S'inscrire gratuitement",
+
+  "beigemidsection-title-1": "Finissez-en avec les tâches qui vous font perdre du temps",
+  "beigemidsection-title-2": "La plupart des outils de “productivité” vous détournent de votre objectif et perturbent sans cesse votre flux de travail. Mais vous pouvez travailler plus intelligemment. Dropbox vous aide à rester organisé, concentré et en phase avec votre équipe.",
+
+  "subfooter-title-1": "Choisissez le forfait Dropbox qui vous convient",
+  "subfooter-title-2": "Pour les freelances et travailleurs indépendants",
+  "subfooter-title-3": "Pour les entreprises et les équipes de toute taille",
+  "subfooter-button-1": "Passer à Dropbox",
+  "subfooter-button-2": "Passer à Dropbox Business",
+
   "footer-col-1-title": "Dropbox",
   "footer-col-1-link-1": "Sur ordinateur",
   "footer-col-1-link-2": "Sur mobile",
@@ -29,11 +42,5 @@
   "footer-col-5-title": "Communauté",
   "footer-col-5-link-1": "Développeurs",
   "footer-col-5-link-2": "Parrainages",
-  "footer-col-5-link-3": "Forum",
-
-  "subfooter-title-1": "Choisissez le forfait Dropbox qui vous convient",
-  "subfooter-title-2": "Pour les freelances et travailleurs indépendants",
-  "subfooter-title-3": "Pour les entreprises et les équipes de toute taille",
-  "subfooter-button-1": "Passer à Dropbox",
-  "subfooter-button-2": "Passer à Dropbox Business"
+  "footer-col-5-link-3": "Forum"
 }

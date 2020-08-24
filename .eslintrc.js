@@ -25,9 +25,11 @@ module.exports = {
     'array-callback-retur': 0,
     '@typescript-eslint/no-explicit-any': 0,
     'jsx-a11y/label-has-associated-control': 0,
-    'camelcase': 0,
+    camelcase: 0,
     '@typescript-eslint/explicit-module-boundary-types': 0,
     'jsx-a11y/interactive-supports-focus': 0,
-    'jsx-a11y/click-events-have-key-events': 0
+    'jsx-a11y/click-events-have-key-events': 0,
+    'jsx-a11y/no-noninteractive-element-interactions': 0,
+    'jsx-a11y/no-static-element-interactions': 0,
   },
 };

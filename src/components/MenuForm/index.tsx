@@ -15,7 +15,7 @@ const MenuForm: React.FC = () => {
           <span>Dropbox</span>
         </h1>
         {/* ✕ chacter in video description */}
-        <button className="action--close" onClick={handleToggle}>
+        <button type="button" className="action--close" onClick={handleToggle}>
           ✕
         </button>
       </Navigation>
@@ -29,7 +29,7 @@ const MenuForm: React.FC = () => {
         <input type="email" placeholder="E-mail" />
         <input type="password" placeholder="Senha" />
 
-        <button>Prosseguir</button>
+        <button type="button">Prosseguir</button>
 
         <span className="terms">Esta página está sujeita à Política de privacidade e aos Termos de serviço.</span>
       </Form>

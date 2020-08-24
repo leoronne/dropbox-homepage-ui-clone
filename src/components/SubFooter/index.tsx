@@ -1,26 +1,15 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import handleToggle from '../../utils/showMenu';
+import Header from '../Header';
 
-import { Container, HeaderWrapper, Header, DropboxLogo, Content } from './styles';
+import { Container, Content } from './styles';
 
 const SubFooter: React.FC = () => {
   const { t } = useTranslation();
   return (
     <Container>
-      <HeaderWrapper>
-        <Header>
-          <h1>
-            <DropboxLogo />
-            <span>Dropbox</span>
-          </h1>
-
-          <button type="button" onClick={handleToggle}>
-            Acessar
-          </button>
-        </Header>
-      </HeaderWrapper>
+      <Header />
 
       <Content>
         <section>

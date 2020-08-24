@@ -1,4 +1,17 @@
 {
+  "subheader-title-1": "Concéntrate en el trabajo que importa",
+  "subheader-title-2": "Dropbox es el primer espacio de trabajo inteligente del mundo. Reunimos todo el contenido de tu equipo para que trabajes con las herramientas que amas. Además, te ayudamos a descartar lo innecesario, ya que solo se muestra lo que más importa.",
+  "subheader-button-1": "Regístrate gratis",
+
+  "beigemidsection-title-1": "Olvídate del trabajo pesado",
+  "beigemidsection-title-2": "La mayoría de las herramientas de “productividad” suelen ser un estorbo e interrumpen el flujo de trabajo. Pero existe una manera más eficiente de trabajar. Dropbox ayuda a las personas a organizarse, centrarse en el trabajo y estar en sintonía con sus equipos.",
+
+  "subfooter-title-1": "Encuentra el plan de Dropbox más apropiado para ti",
+  "subfooter-title-2": "Para autónomos y trabajadores independientes",
+  "subfooter-title-3": "Para empresas y equipos de cualquier tamaño",
+  "subfooter-button-1": "Obtén Dropbox",
+  "subfooter-button-2": "Obtén Dropbox Business",
+
   "footer-col-1-title": "Dropbox",
   "footer-col-1-link-1": "Aplicación para escritorio",
   "footer-col-1-link-2": "Aplicaciones para dispositivos móviles",
@@ -29,11 +42,5 @@
   "footer-col-5-title": "Comunidad",
   "footer-col-5-link-1": "Desarrolladores",
   "footer-col-5-link-2": "Recomendaciones",
-  "footer-col-5-link-3": "Foro",
-
-  "subfooter-title-1": "Encuentra el plan de Dropbox más apropiado para ti",
-  "subfooter-title-2": "Para autónomos y trabajadores independientes",
-  "subfooter-title-3": "Para empresas y equipos de cualquier tamaño",
-  "subfooter-button-1": "Obtén Dropbox",
-  "subfooter-button-2": "Obtén Dropbox Business"
+  "footer-col-5-link-3": "Foro"
 }
