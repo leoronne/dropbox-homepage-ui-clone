@@ -66,4 +66,16 @@ export default createGlobalStyle`
     outline: none;
   }
 
+  input {
+    transition: 0.7s !important;
+    outline: none !important;
+  }
+
+  input:focus {
+    outline: none !important;
+    border: 1px solid var(--color-blue) !important;
+    transition: 0.7s !important;
+    box-shadow: 0px 0px 1px var(--color-blue);
+  }
+
 `;
