@@ -5,11 +5,11 @@
 <br>
 
 <div align="center" style="margin: 20px; text-align: center">
-  
+
   [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
   ![GitHub last commit](https://img.shields.io/github/last-commit/leoronne/dropbox-homepage-ui-clone?color=green&style=flat-square)
   ![GitHub top language](https://img.shields.io/github/languages/top/leoronne/dropbox-homepage-ui-clone?style=flat-square)
-  
+
 </div>
 
 ##
@@ -21,6 +21,20 @@
   <a href="#test-heavy_check_mark">Test</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#contributing-">Contributing</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#license-memo">License</a>
+</p>
+
+##
+
+<br>
+
+<p align="center">
+  <img src="src\assets\img\dropbox-1.gif"/>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="src\assets\img\dropbox-2.gif"/>
 </p>
 
 ##
