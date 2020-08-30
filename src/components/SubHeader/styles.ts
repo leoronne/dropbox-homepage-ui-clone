@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { FaGithub } from 'react-icons/fa';
 
 export const Container = styled.div`
   --padding-top: 100px;
@@ -26,12 +27,27 @@ export const Container = styled.div`
   position: relative;
 `;
 
+export const GitHubIcon = styled(FaGithub)`
+  margin-left: 20px;
+  width: 20px;
+  height: 20px;
+  fill: var(--logo-color);
+  transition: opacity 0.6s ease !important;
+  cursor: pointer;
+  opacity: 0.5;
+
+  &:hover {
+    transition: opacity 0.6s ease !important;
+    opacity: 0.8;
+  }
+`;
+
 export const Content = styled.div`
   z-index: 3;
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
-  padding: var(--padding-top) 32px var(--padding-bottom);
+  padding: var(--padding-top) 20px var(--padding-bottom);
 
   > h2 {
     color: var(--logo-color);
@@ -40,6 +56,8 @@ export const Content = styled.div`
     letter-spacing: -1px;
     margin-top: 15px;
     max-width: var(--content-width);
+    display: flex;
+    align-items: center;
   }
   > p {
     margin-top: 40px;
@@ -61,7 +79,7 @@ export const Content = styled.div`
     margin-top: 50px;
     background-color: var(--text-color);
     color: var(--bg-color);
-    padding: 13px 50px;
+    padding: 13px 30px;
     font-size: 16px;
     line-height: 26px;
     text-decoration: none;
@@ -130,6 +148,10 @@ export const Content = styled.div`
       max-width: 720px;
       visibility: hidden;
     }
+  }
+
+  @media (min-width: 390px) {
+    padding: var(--padding-top) 32px var(--padding-bottom);
   }
 
   @media (min-width: 468px) {

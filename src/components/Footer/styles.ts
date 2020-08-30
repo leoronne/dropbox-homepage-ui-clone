@@ -55,7 +55,7 @@ export const Content = styled.div`
     -webkit-box-flex: 0;
     flex: 0 0 50%;
     max-width: 50%;
-    padding-bottom: 44px;
+    padding: 0 5px 44px;
 
     > h2 {
       font-size: 22px;
@@ -129,7 +129,6 @@ export const BottomFooter = styled.div`
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   flex-flow: row wrap;
-  width: 83.33333%;
   height: auto;
   max-width: 1080px;
   margin-left: auto;
@@ -179,10 +178,30 @@ export const BottomFooter = styled.div`
     border-bottom: transparent !important;
   }
 
+  .MuiButtonBase-root {
+    color: var(--text-color) !important;
+    background-color: #3c3c3c !important;
+  }
+
   .footer__border {
     border-bottom: 1px solid var(--text-color);
     margin-bottom: 20px;
     width: 100%;
+  }
+
+  > p {
+    margin-top: 45px;
+    color: #767676;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+
+    > a {
+      color: #b1afaf;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
   }
 
   @media only screen and (min-width: 375px) {

@@ -10,20 +10,23 @@ import SubFooter from './components/SubFooter';
 import Footer from './components/Footer';
 
 import { LanguageProvider } from './hooks/useLanguage';
+import { ToggleMenuProvider } from './hooks/useToggleMenu';
 
 function App() {
   return (
     <>
       <LanguageProvider>
-        <SubHeader />
-        <BeigeMidSection />
-        <BlueMidSection />
-        <SubFooter />
-        <Footer />
+        <ToggleMenuProvider>
+          <SubHeader />
+          <BeigeMidSection />
+          <BlueMidSection />
+          <SubFooter />
+          <Footer />
 
-        <SideMenu>
-          <MenuForm />
-        </SideMenu>
+          <SideMenu>
+            <MenuForm />
+          </SideMenu>
+        </ToggleMenuProvider>
       </LanguageProvider>
 
       <GlobalStyles />

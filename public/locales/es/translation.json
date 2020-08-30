@@ -1,4 +1,7 @@
 {
+  "header-button-1": "Para equipos",
+  "header-button-2": "Para personas",
+
   "and": " y a las ",
   "or": "o",
   "download": "Descargar",
@@ -33,6 +36,19 @@
 
   "beigemidsection-title-1": "Olvídate del trabajo pesado",
   "beigemidsection-title-2": "La mayoría de las herramientas de “productividad” suelen ser un estorbo e interrumpen el flujo de trabajo. Pero existe una manera más eficiente de trabajar. Dropbox ayuda a las personas a organizarse, centrarse en el trabajo y estar en sintonía con sus equipos.",
+
+  "bluemidsection-title-1": "El almacenamiento y el uso compartido de archivos son solo el comienzo",
+  "bluemidsection-title-2": "Organízate",
+  "bluemidsection-title-3": "Reúne en un mismo lugar tus archivos tradicionales, tu contenido en la nube, tus documentos de Dropbox Paper y tus accesos directos web, y trabaja de la forma más apropiada para ti.",
+  "bluemidsection-title-4": "Mantente enfocado",
+  "bluemidsection-title-5": "Las sugerencias personalizadas te ofrecen archivos y carpetas en el momento oportuno, para que no pierdas tiempo buscándolos.",
+  "bluemidsection-title-6": "Sincronízate",
+  "bluemidsection-title-7": "Coordínate con tu equipo y avanza en tus proyectos con las herramientas que usas todos los días, todo desde tu Dropbox.",
+  "bluemidsection-footer-title-1": "Obtén más información sobre los beneficios de Dropbox.",
+  "bluemidsection-footer-title-2": "Ver las características",
+  "bluemidsection-img-1": "/img/bluemid-1-es.png",
+  "bluemidsection-img-2": "/img/bluemid-2-es.png",
+  "bluemidsection-img-3": "/img/bluemid-3-es.png",
 
   "subfooter-title-1": "Encuentra el plan de Dropbox más apropiado para ti",
   "subfooter-title-2": "Para autónomos y trabajadores independientes",
@@ -70,5 +86,7 @@
   "footer-col-5-title": "Comunidad",
   "footer-col-5-link-1": "Desarrolladores",
   "footer-col-5-link-2": "Recomendaciones",
-  "footer-col-5-link-3": "Foro"
+  "footer-col-5-link-3": "Foro",
+
+  "designed": "Diseñado por"
 }

@@ -8,16 +8,15 @@ declare global {
   }
 }
 
-const scrollThreshold = 300;
-
 const SideMenu: React.FC = ({ children }) => {
   const [isActive, setIsActive] = useState(false);
   const [scrollY, setScrollY] = useState(0);
+  const scrollThreshold = 500;
 
   useEffect(() => {
     function onScroll() {
       setScrollY(window.scrollY);
-      setIsActive(false);
+      if (window.innerWidth >= 1024) setIsActive(false);
     }
 
     window.addEventListener('scroll', onScroll);

@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
+import { makeStyles } from '@material-ui/core/styles';
 
 import { useLanguage } from '../../hooks/useLanguage';
 
@@ -18,8 +19,25 @@ interface LinksHref {
   [key: string]: string;
 }
 
+const useStyles = makeStyles({
+  select: {
+    borderRadius: '5px',
+    '& ul': {
+      backgroundColor: '#3c3c3c',
+      color: '#fff',
+    },
+    '& li': {
+      fontSize: 13,
+      '&:hover': {
+        backgroundColor: '#787777',
+      },
+    },
+  },
+});
+
 const Footer: React.FC = () => {
   const { t } = useTranslation();
+  const classes = useStyles();
   const { language, changeLanguage } = useLanguage();
   const titles = [t('footer-col-1-title'), t('footer-col-2-title'), t('footer-col-3-title'), t('footer-col-4-title'), t('footer-col-5-title')];
   const linksHref: LinksHref = {
@@ -76,8 +94,14 @@ const Footer: React.FC = () => {
           })}
         </ul>
         <BottomFooter>
-          <div className="footer__border" />
-          <Select labelId="demo-simple-select-label" id="demo-simple-select" value={language} onChange={e => changeLanguage(String(e.target.value))}>
+          <span className="footer__border" />
+          <Select
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+            value={language}
+            onChange={e => changeLanguage(String(e.target.value))}
+            MenuProps={{ classes: { paper: classes.select } }}
+          >
             <MenuItem value="en">
               <USAIcon />
               <span>English (United States)</span>
@@ -95,12 +119,12 @@ const Footer: React.FC = () => {
               <span>Português (Brasil)</span>
             </MenuItem>
           </Select>
-          {/* <select defaultValue={language} onChange={e => changeLanguage(e.target.value)}>
-            <option value="en">English (United States)</option>
-            <option value="es">Español (Latinoamérica)</option>
-            <option value="fr">Français</option>
-            <option value="pt">Português (Brasil)</option>
-          </select> */}
+          <p>
+            {`© ${new Date().getFullYear()}. ${t('designed')}  `}
+            <a href="http://github.com/leoronne" target="_blank" rel="noopener noreferrer">
+              Leonardo Ronne
+            </a>
+          </p>
         </BottomFooter>
       </Content>
     </Container>

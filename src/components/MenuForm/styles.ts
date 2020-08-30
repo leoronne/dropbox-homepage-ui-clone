@@ -18,7 +18,7 @@ export const Navigation = styled.nav`
   align-items: center;
   justify-content: space-between;
 
-  padding: 16px 32px;
+  padding: 16px 15%;
   min-height: 61px;
 
   .action {

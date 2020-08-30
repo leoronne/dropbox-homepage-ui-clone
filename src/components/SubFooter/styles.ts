@@ -54,13 +54,13 @@ export const Content = styled.div`
       margin-top: 50px;
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      grid-gap: 40px;
+      grid-gap: 80px;
 
       > .col {
         > .subfooter-link {
           background-color: var(--color-blue);
           color: var(--bg-color);
-          padding: 13px 50px;
+          padding: 13px 30px;
           font-size: 16px;
           line-height: 26px;
           text-decoration: none;

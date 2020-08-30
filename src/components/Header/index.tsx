@@ -1,22 +1,55 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-import handleToggle from '../../utils/showMenu';
+import scrollInto from '../../utils/scrollInto';
 
-import { HeaderWrapper, HeaderContent, DropboxLogo } from './styles';
+import { useToggleMenu } from '../../hooks/useToggleMenu';
+
+import { HeaderWrapper, HeaderContent, DropboxLogo, MenuIcon } from './styles';
 
 const Header: React.FC = () => {
-  const buttonVariant = Math.round(Math.random());
+  const { t } = useTranslation();
+  const { setFormActive, handleToggle } = useToggleMenu();
   return (
     <HeaderWrapper>
       <HeaderContent>
-        <h1>
-          <DropboxLogo />
-          <span>Dropbox</span>
-        </h1>
+        <div className="header-left">
+          <h1>
+            <DropboxLogo onClick={() => scrollInto('top-content')} />
+            <span>Dropbox</span>
+          </h1>
+          <a href="https://www.dropbox.com/business" target="_blank" rel="noopener noreferrer">
+            {t('header-button-1')}
+          </a>
 
-        <button type="button" onClick={handleToggle}>
-          {buttonVariant === 0 ? 'Interagir' : 'Acessar'}
-        </button>
+          <a href="https://www.dropbox.com/individual" target="_blank" rel="noopener noreferrer">
+            {t('header-button-2')}
+          </a>
+        </div>
+
+        <div className="access-buttons">
+          <button
+            type="button"
+            onClick={() => {
+              handleToggle();
+              setFormActive(false);
+            }}
+            id="signin-button"
+          >
+            {t('widget-signin')}
+          </button>
+
+          <button
+            type="button"
+            onClick={() => {
+              handleToggle();
+              setFormActive(true);
+            }}
+          >
+            <p>{t('widget-signup-button-2')}</p>
+            <MenuIcon />
+          </button>
+        </div>
       </HeaderContent>
     </HeaderWrapper>
   );

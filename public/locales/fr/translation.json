@@ -1,4 +1,7 @@
 {
+  "header-button-1": "Pour les équipes",
+  "header-button-2": "Pour les particuliers",
+
   "and": " et aux ",
   "or": "ou",
   "download": "Télécharger",
@@ -33,6 +36,19 @@
 
   "beigemidsection-title-1": "Finissez-en avec les tâches qui vous font perdre du temps",
   "beigemidsection-title-2": "La plupart des outils de “productivité” vous détournent de votre objectif et perturbent sans cesse votre flux de travail. Mais vous pouvez travailler plus intelligemment. Dropbox vous aide à rester organisé, concentré et en phase avec votre équipe.",
+
+  "bluemidsection-title-1": "Faites bien plus que stocker et partager des fichiers",
+  "bluemidsection-title-2": "Soyez organisé",
+  "bluemidsection-title-3": "Rassemblez vos fichiers traditionnels, vos contenus cloud, vos documents Dropbox Paper et vos raccourcis Web au même endroit, et travaillez de la façon qui vous convient.",
+  "bluemidsection-title-4": "Restez concentré",
+  "bluemidsection-title-5": "Grâce aux suggestions personnalisées, vous passez moins de temps à rechercher les fichiers et dossiers dont vous avez besoin.",
+  "bluemidsection-title-6": "Mettez tout le monde sur la même longueur d'onde",
+  "bluemidsection-title-7": "Coordonnez le travail d'équipe et faites avancer vos projets avec les outils que vous utilisez au quotidien, sans quitter Dropbox.",
+  "bluemidsection-footer-title-1": "En savoir plus sur les avantages de Dropbox",
+  "bluemidsection-footer-title-2": "Voir les fonctionnalités",
+  "bluemidsection-img-1": "/img/bluemid-1-fr.png",
+  "bluemidsection-img-2": "/img/bluemid-2-fr.png",
+  "bluemidsection-img-3": "/img/bluemid-3-fr.png",
 
   "subfooter-title-1": "Choisissez le forfait Dropbox qui vous convient",
   "subfooter-title-2": "Pour les freelances et travailleurs indépendants",
@@ -70,5 +86,7 @@
   "footer-col-5-title": "Communauté",
   "footer-col-5-link-1": "Développeurs",
   "footer-col-5-link-2": "Parrainages",
-  "footer-col-5-link-3": "Forum"
+  "footer-col-5-link-3": "Forum",
+
+  "designed": "Conçu par"
 }

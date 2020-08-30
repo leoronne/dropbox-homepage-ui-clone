@@ -32,3 +32,5 @@ firebase.json
 *.psd
 
 /storybook-static
+
+yarn.lock

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { useToggleMenu } from '../../hooks/useToggleMenu';
+
 import { ReactComponent as GoogleIcon } from '~/assets/svg/google.svg';
 import { ReactComponent as AppleIcon } from '~/assets/svg/apple.svg';
 
@@ -10,12 +12,9 @@ import uncheck from '~/assets/img/uncheck.png';
 import { Container, Navigation, DropboxLogo, Form } from './styles';
 
 const MenuForm: React.FC = () => {
-  const [checked, setChecked] = useState(false);
-  const [formActive, setFormActive] = useState(true); // true - register / false - login
+  const { setFormActive, formActive, handleToggle } = useToggleMenu();
   const { t } = useTranslation();
-  function handleToggle() {
-    if (window.toggleActiveMenu) window.toggleActiveMenu();
-  }
+  const [checked, setChecked] = useState(false);
 
   return (
     <Container>

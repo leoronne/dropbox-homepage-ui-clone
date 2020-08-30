@@ -1,32 +1,40 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import handleToggle from '../../utils/showMenu';
+import scrollInto from '../../utils/scrollInto';
+
+import { useToggleMenu } from '../../hooks/useToggleMenu';
 
 import Header from '../Header';
 import { ReactComponent as ArrowIcon } from '~/assets/svg/arrow.svg';
 
 import hero from '~/assets/img/hero.png';
 
-import { Container, Content } from './styles';
+import { Container, Content, GitHubIcon } from './styles';
 
 const SubHeader: React.FC = () => {
+  const { setFormActive, handleToggle } = useToggleMenu();
   const { t } = useTranslation();
-
-  const scrollInto = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) element.scrollIntoView({ behavior: 'smooth' });
-  };
+  //
 
   return (
-    <Container>
+    <Container id="top-content">
       <Header />
 
       <Content>
-        <h4>Dropbox</h4>
+        <h4>
+          Dropbox UI Clone
+          <GitHubIcon onClick={() => window.open('https://github.com/leoronne/dropbox-homepage-ui-clone', 'blank')} />
+        </h4>
         <h2>{t('subheader-title-1')}</h2>
         <p>{t('subheader-title-2')}</p>
-        <div className="subheader-link" onClick={() => handleToggle()}>
+        <div
+          className="subheader-link"
+          onClick={() => {
+            handleToggle();
+            setFormActive(true);
+          }}
+        >
           {t('subheader-button-1')}
         </div>
 

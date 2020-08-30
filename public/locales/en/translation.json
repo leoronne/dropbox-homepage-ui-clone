@@ -1,4 +1,7 @@
 {
+  "header-button-1": "For Teams",
+  "header-button-2": "For Individuals",
+
   "and": " and ",
   "or": "or",
   "download": "Download",
@@ -33,6 +36,19 @@
 
   "beigemidsection-title-1": "Say goodbye to busywork",
   "beigemidsection-title-2": "Most “productivity” tools get in your way and constantly disrupt your flow. There’s a more enlightened way to work. Dropbox helps people be organized, stay focused, and get in sync with their teams.",
+
+  "bluemidsection-title-1": "File storage and sharing are just the beginning",
+  "bluemidsection-title-2": "Be organized",
+  "bluemidsection-title-3": "Bring traditional files, cloud content, Dropbox Paper docs, and web shortcuts together in one place—and work the way that works for you.",
+  "bluemidsection-title-4": "Stay focused",
+  "bluemidsection-title-5": "Personalized suggestions give you files and folders when you need them so you spend less time searching.",
+  "bluemidsection-title-6": "Get in sync",
+  "bluemidsection-title-7": "Coordinate with your team and push projects forward with the tools you use every day—all within Dropbox.",
+  "bluemidsection-footer-title-1": "Learn more about the benefits of Dropbox",
+  "bluemidsection-footer-title-2": "See features",
+  "bluemidsection-img-1": "/img/bluemid-1-en.png",
+  "bluemidsection-img-2": "/img/bluemid-2-en.png",
+  "bluemidsection-img-3": "/img/bluemid-3-en.png",
 
   "subfooter-title-1": "Find the right Dropbox plan for you",
   "subfooter-title-2": "For freelancers and solo workers",
@@ -70,5 +86,7 @@
   "footer-col-5-title": "Community",
   "footer-col-5-link-1": "Developers",
   "footer-col-5-link-2": "Referrals",
-  "footer-col-5-link-3": "Forum"
+  "footer-col-5-link-3": "Forum",
+
+  "designed": "Designed by"
 }
