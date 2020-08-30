@@ -11,7 +11,7 @@ i18n
   .init({
     debug: true,
 
-    lng: lgnstrg || 'pt',
+    lng: lgnstrg || 'en',
     fallbackLng: 'en',
     whitelist: ['en', 'pt', 'es', 'fr'],
 

@@ -124,6 +124,7 @@ const Footer: React.FC = () => {
             <a href="http://github.com/leoronne" target="_blank" rel="noopener noreferrer">
               Leonardo Ronne
             </a>
+            .
           </p>
         </BottomFooter>
       </Content>
