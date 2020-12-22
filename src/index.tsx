@@ -1,19 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { I18nextProvider } from 'react-i18next';
 
-import LoaderSpinner from './components/LoaderSpinner';
+import { LoaderSpinner } from './components';
+
+import AppProvider from './hooks';
 
 import App from './App';
-import i18n from './i18n';
 
 ReactDOM.render(
-  <React.Suspense fallback={<LoaderSpinner />}>
-    <I18nextProvider i18n={i18n}>
-      <React.StrictMode>
+  <React.Suspense fallback={<LoaderSpinner color="#0d2f81" />}>
+    <React.StrictMode>
+      <AppProvider>
         <App />
-      </React.StrictMode>
-    </I18nextProvider>
+      </AppProvider>
+    </React.StrictMode>
   </React.Suspense>,
   document.getElementById('root')
 );

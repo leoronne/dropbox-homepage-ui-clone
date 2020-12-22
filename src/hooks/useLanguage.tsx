@@ -1,5 +1,6 @@
-import React, { createContext, useState, useEffect, useContext } from 'react';
+import React, { createContext, useState, useEffect, useContext, useCallback } from 'react';
 import i18n from 'i18next';
+import { Cookies } from 'react-cookie-consent';
 
 interface LanguageContextProps {
   changeLanguage(lgn: string): void;
@@ -9,23 +10,23 @@ interface LanguageContextProps {
 const LanguageContext = createContext<LanguageContextProps>({} as LanguageContextProps);
 
 const LanguageProvider: React.FC = ({ children }) => {
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState('pt');
 
-  function changeLanguage(lgn: string) {
-    i18n.changeLanguage(lgn);
-    localStorage.setItem('defaultLanguage', lgn);
+  const changeLanguage = useCallback((lgn: string) => {
+    if (process.env.NODE_ENV !== 'test') i18n.changeLanguage(lgn.toLowerCase());
+    Cookies.set('@dropbox-ui-clone:language', lgn);
     setLanguage(lgn);
-  }
+  }, []);
 
   useEffect(() => {
-    const lgnstrg = localStorage.getItem('defaultLanguage');
-    changeLanguage(lgnstrg || 'en');
-  }, []);
+    const lgnstrg = Cookies.get('@dropbox-ui-clone:language') || 'pt';
+    changeLanguage(lgnstrg);
+  }, [changeLanguage]);
 
   return <LanguageContext.Provider value={{ language, changeLanguage }}>{children}</LanguageContext.Provider>;
 };
 
-function useLanguage() {
+const useLanguage = (): LanguageContextProps => {
   const context = useContext(LanguageContext);
 
   if (!context) {
@@ -33,6 +34,6 @@ function useLanguage() {
   }
 
   return context;
-}
+};
 
 export { LanguageProvider, useLanguage };

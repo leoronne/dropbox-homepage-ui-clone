@@ -18,23 +18,9 @@
   <a href="#project-star2">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#techs-rocket">Techs</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#installation-wrench">Installation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#test-heavy_check_mark">Test</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#start-on">Start</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#contributing-">Contributing</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#license-memo">License</a>
-</p>
-
-##
-
-<br>
-
-<p align="center">
-  <img src="src\assets\img\dropbox-1.gif"/>
-</p>
-
-<br>
-
-<p align="center">
-  <img src="src\assets\img\dropbox-2.gif"/>
 </p>
 
 ##
@@ -51,6 +37,18 @@ Deployed [here](https://dropbox-ui-clone.web.app).
 
 <br>
 
+<p align="center">
+  <img src="src\assets\img\dropbox-1.gif"/>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="src\assets\img\dropbox-2.gif"/>
+</p>
+
+<br>
+
 ## Techs :rocket:
 
 - [x] [ReactJS](https://reactjs.org);
@@ -61,11 +59,13 @@ Deployed [here](https://dropbox-ui-clone.web.app).
 
 ## Installation :wrench:
 
+First you need to clone the project using `git clone https://github.com/leoronne/dropbox-homepage-ui-clone.git`.
+
 You can install the application using `npm install` or `yarn install` on the root dir.
 
 <br>
 
-## Test :heavy_check_mark:
+## Start :on:
 
 To start the application interface just run `npm start` or `yarn start` on the root dir.
 

@@ -1,19 +1,12 @@
 import React from 'react';
-import { ClipLoader } from 'react-spinners';
+import { CircularProgress } from '@material-ui/core';
 
 import { Container } from './styles';
 
-const Loader: React.FC = () => {
+const Loader: React.FC<{ color: string }> = ({ color = '#0d2f81' }) => {
   return (
     <Container className="loader-container">
-      <ClipLoader
-        css={`
-          display: block;
-          margin: 0 auto;
-        `}
-        size={18}
-        color="#0d2f81"
-      />
+      <CircularProgress size={15} style={{ color }} />
     </Container>
   );
 };

@@ -47,10 +47,6 @@ const BlueMidSection: React.FC = () => {
         ];
 
         const scrollPosition = window.scrollY + yOffset;
-
-        // console.log('scrollPosition', scrollPosition);
-        // console.log('sectionRefs', sectionRefs);
-        // console.log('sectionRefs[1].pos.yPos - sectionRefs[1].pos.height / 2', sectionRefs[1].pos.yPos - sectionRefs[1].pos.height / 2);
         if (scrollPosition >= 0 && scrollPosition < sectionRefs[0].pos.yPos + sectionRefs[0].pos.height / 4) {
           setVisibleSection(1);
         } else if (scrollPosition >= sectionRefs[0].pos.yPos + sectionRefs[0].pos.height / 4 && scrollPosition < sectionRefs[1].pos.yPos + sectionRefs[1].pos.height / 4) {

@@ -18,7 +18,7 @@ const ToggleMenuProvider: React.FC = ({ children }) => {
   return <ToggleMenuContext.Provider value={{ setFormActive, formActive, handleToggle }}>{children}</ToggleMenuContext.Provider>;
 };
 
-function useToggleMenu() {
+const useToggleMenu = (): ToggleMenuContextProps => {
   const context = useContext(ToggleMenuContext);
 
   if (!context) {

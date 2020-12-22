@@ -15,7 +15,6 @@ import { Container, Content, GitHubIcon } from './styles';
 const SubHeader: React.FC = () => {
   const { setFormActive, handleToggle } = useToggleMenu();
   const { t } = useTranslation();
-  //
 
   return (
     <Container id="top-content">

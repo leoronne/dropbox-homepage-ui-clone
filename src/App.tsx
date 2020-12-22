@@ -1,37 +1,25 @@
 import React from 'react';
 
 import GlobalStyles from './styles/GlobalStyles';
-import SideMenu from './components/SideMenu';
-import MenuForm from './components/MenuForm';
-import SubHeader from './components/SubHeader';
-import BeigeMidSection from './components/BeigeMidSection';
-import BlueMidSection from './components/BlueMidSection';
-import SubFooter from './components/SubFooter';
-import Footer from './components/Footer';
 
-import { LanguageProvider } from './hooks/useLanguage';
-import { ToggleMenuProvider } from './hooks/useToggleMenu';
+import { SideMenu, MenuForm, BeigeMidSection, BlueMidSection, Footer, SubFooter, SubHeader } from './components';
 
-function App() {
+const App: React.FC = () => {
   return (
     <>
-      <LanguageProvider>
-        <ToggleMenuProvider>
-          <SubHeader />
-          <BeigeMidSection />
-          <BlueMidSection />
-          <SubFooter />
-          <Footer />
+      <SubHeader />
+      <BeigeMidSection />
+      <BlueMidSection />
+      <SubFooter />
+      <Footer />
 
-          <SideMenu>
-            <MenuForm />
-          </SideMenu>
-        </ToggleMenuProvider>
-      </LanguageProvider>
+      <SideMenu>
+        <MenuForm />
+      </SideMenu>
 
       <GlobalStyles />
     </>
   );
-}
+};
 
 export default App;

@@ -1,4 +1,4 @@
-const scrollInto = (id: string) => {
+const scrollInto = (id: string): void => {
   const yOffset = -67; // header height
   const element = document.getElementById(id);
 
