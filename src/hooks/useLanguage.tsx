@@ -10,7 +10,7 @@ interface LanguageContextProps {
 const LanguageContext = createContext<LanguageContextProps>({} as LanguageContextProps);
 
 const LanguageProvider: React.FC = ({ children }) => {
-  const [language, setLanguage] = useState('pt');
+  const [language, setLanguage] = useState('en');
 
   const changeLanguage = useCallback((lgn: string) => {
     if (process.env.NODE_ENV !== 'test') i18n.changeLanguage(lgn.toLowerCase());
@@ -19,7 +19,7 @@ const LanguageProvider: React.FC = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    const lgnstrg = Cookies.get('@dropbox-ui-clone:language') || 'pt';
+    const lgnstrg = Cookies.get('@dropbox-ui-clone:language') || 'en';
     changeLanguage(lgnstrg);
   }, [changeLanguage]);
 
