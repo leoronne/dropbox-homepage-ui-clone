@@ -11,7 +11,7 @@ i18n
 
     lng: 'en',
     fallbackLng: 'en',
-    whitelist: ['en', 'pt', 'es', 'fr'],
+    supportedLngs: ['en', 'pt', 'es', 'fr'],
 
     interpolation: {
       escapeValue: false,
