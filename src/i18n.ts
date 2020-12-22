@@ -3,15 +3,13 @@ import { initReactI18next } from 'react-i18next';
 
 import Backend from 'i18next-xhr-backend';
 
-const lgnstrg = localStorage.getItem('@dropbox-ui-clone:language');
-
 i18n
   .use(Backend)
   .use(initReactI18next)
   .init({
     debug: true,
 
-    lng: lgnstrg || 'en',
+    lng: 'en',
     fallbackLng: 'en',
     whitelist: ['en', 'pt', 'es', 'fr'],
 
