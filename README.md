@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="src\assets\img\transparentBanner.png" width="70%"/>
+  <img src="src\assets\img\transparentBanner.png" width="50%"/>
 </p>
 
 <br>
@@ -25,15 +25,19 @@
 
 ##
 
+<p align="center">
+  <img src="src\assets\img\banner.png" />
+</p>
+
 <br>
 
 ## Project :star2:
 
-This repo contains an UI clone from Dropbox homepage.
+This repo contains an UI clone from Dropbox Homepage website
 
 <br>
 
-Deployed [here](https://dropbox-ui-clone.web.app).
+Deployed [here](https://dropbox.ui-clone.ronne.dev/).
 
 <br>
 
