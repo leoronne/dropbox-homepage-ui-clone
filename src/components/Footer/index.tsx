@@ -31,6 +31,11 @@ const useStyles = makeStyles({
       '&:hover': {
         backgroundColor: '#787777',
       },
+      '& svg': {
+        height: '20px',
+        width: '20px',
+        marginRight: '10px'
+      },
     },
   },
 });
@@ -95,13 +100,7 @@ const Footer: React.FC = () => {
         </ul>
         <BottomFooter>
           <span className="footer__border" />
-          <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
-            value={language}
-            onChange={e => changeLanguage(String(e.target.value))}
-            MenuProps={{ classes: { paper: classes.select } }}
-          >
+          <Select value={language} onChange={e => changeLanguage(String(e.target.value))} MenuProps={{ classes: { paper: classes.select } }}>
             <MenuItem value="en">
               <USAIcon />
               <span>English (United States)</span>
