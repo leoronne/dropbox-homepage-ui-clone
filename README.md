@@ -33,9 +33,9 @@
 
 ## Project :star2:
 
-This repo contains an UI clone from Dropbox Homepage website
+This project was part of an UI Clone challenge, the idea was to replicate Dropbox's homepage using ReactJS, MUI and styled-components.
 
-<br>
+The intent of this project was to work with the color filled transitions through different sections, it also has support for different languages.
 
 Deployed [here](https://dropbox.ui-clone.ronne.dev/).
 
